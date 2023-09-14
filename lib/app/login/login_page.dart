@@ -34,11 +34,30 @@ class _LoginPageState extends State<LoginPage> {
               ),
               TextField(
                 controller: widget.emailController,
-                decoration: const InputDecoration(hintText: 'E-mail'),
+                decoration: InputDecoration(
+                  hintText: 'E-mail',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  filled: true,
+                  hintStyle: TextStyle(color: Colors.grey[600]),
+                  fillColor: Colors.white70,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
               ),
               TextField(
                 controller: widget.passwordController,
-                decoration: const InputDecoration(hintText: 'Password'),
+                decoration: InputDecoration(
+                  hintText: 'Password',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  filled: true,
+                  hintStyle: TextStyle(color: Colors.grey[600]),
+                  fillColor: Colors.white70,
+                ),
                 obscureText: true,
               ),
               const SizedBox(
